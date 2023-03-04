@@ -1,0 +1,58 @@
+* {
+    /* Removes default padding and margin applied to all elements */
+    margin: 0; 
+    padding: 0;
+    /* Height width calculates with border as well */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px;
+    height: 100vh;
+}
+
+li {
+    list-style-position: inside;
+}
+
+ol li{
+    margin-bottom: 1em;
+}
+
+.grid_3_col {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.grid_center {
+    justify-items: center;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.bottom-space {
+    margin-bottom: 1em;
+}
+
+.link::before {
+    content: "\00BB";
+    padding-right: 0.5em;
+}
+
+.no-text-decoration {
+    text-decoration: none;
+}
+
+.no-bullets {
+    list-style: none;
+}
